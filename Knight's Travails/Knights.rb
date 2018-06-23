@@ -17,7 +17,7 @@ class KnightPathFinder
     possible_moves << [pos.first - 1, pos.last - 2]
     #filter invalid moves
     possible_moves.select do |move|
-      (0...3).include?(move.first) && (0...3).include?(move.last)
+      (0...8).include?(move.first) && (0...8).include?(move.last)
     end
     
   end
